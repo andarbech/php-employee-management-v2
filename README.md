@@ -1,74 +1,79 @@
-`#html` `#css` `#php` `#bootstrap` `#javascript` `#jquery` `#jsgrid`
+`#php` `#mvc` `#master-in-software-engineering`
 
-# Employee Management
+# Employee Management V2 <!-- omit in toc -->
 
-This project is based on a employee manager, which allows users to perform CRUD operations over a database of employees, saved in a json file. The application makes use of user sessions, encrypted passwords and the use of external web servers to get employees avatars.
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-## Installation
+> This project provides an easy-to-use interface to manage employees information. The application user case starts with an user log in, and allows the user to read, create, delete and update the employee´s information. The user and employee data is stored in a database.
 
-Clone the repository.
+> This project objective is to create a file structure following the MVC pattern, with a basic router implementation and OOP approach.
 
+## Index <!-- omit in toc -->
+
+- [Requirements](#requirements)
+- [Install - Run](#install---run)
+- [Technologies used](#technologies-used)
+- [Download project](#download-project)
+- [Usage](#usage)
+- [Based on](#based-on)
+
+## Requirements
+
+- You need to have a database with all the employees and users in your mysql workspace. We provide you with all the required queries to create the database, its tables and insert mock data inside the **resources** folder.
+- Set your database configuration on the **config/db.php** file. (username, password, dbname etc.)
+
+## Install - Run
+
+The project dependencies are already referenced in the **package-lock.json** file in the root folder. For that reason, it is only necesary to run the following command to allow these to work:
+
+```sh
+npm instal
 ```
- git clone https://github.com/sanadriu/php-employee-management-v1.git
-```
 
-Install dependencies.
+In order to complete/execute this project, the set up of a server environment and PHP interpreter is needed. You need to have at least PHP v7.4 or above to develop this project, which is capable of running PHP to its latest version.
 
-```
- npm install
-```
-
-If you are not going to use XAMPP, ensure that **PROJECT_FOLDER** constant is **null** and run the next command to serve the PHP application:
-
-```
-  php -S localhost:3000
-```
-
-Otherwise, if you are going to introduce the project in **htdocs** folder, specify the name of the folder for **PROJECT_FOLDER** constant.
-
-In order to use fetch avatars, you will have to uncomment **extension=curl** in **php.ini** file. Otherwise, PHP will fail.
+- XAMPP with PHP >= 7.4
 
 ## Technologies used
 
-- HTML
-- CSS
-- PHP
-- Javascript
-- Jquery
-- jsGrid
-- Bootstrap
+\* Visual Studio Code - Developement IDE
 
-# Project goal
+\* HTML - Markup Language
 
-- Improve knowledge of session variables in PHP.
+\* CSS - Style Sheet Language
 
-- Learn to create a login page.
+\* Javascript - Programming Language
 
-- Handle the session throughout all pages.
+\* Bootstrap - Front-end Library
 
-- Learn to connect with external Web Services.
+\* JQuery - JS library
 
-- Learn to handle encrypted data.
+\* JS-Grid - JS library
 
-- Improve knowledge of reading and writing JSON files.
+\* PHP - Scripting language
 
-- Improve knowledge of AJAX.
+\* XAMPP - Open source cross-platform web server
 
-- Learn to work with a predefined structure.
+## Download project
 
-## API Reference
+To download or install this project in your local computer, either clone the repository or downdload. In order to run the project, please refer to the **requirements** and **install** section in this README file.
 
-#### Get all items
+## Usage
 
-```http
-  GET https://uifaces.co/api/
+```sh
+This project could be used to manage employee information.
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+## Based on
 
-## 🔗 Authors
+This repository is based on a past delivery from master's students:
 
-- [@Adrián](https://github.com/sanadriu)
-- [@Antonio](https://github.com/AntonioCopete)
+👤 **Víctor Martínez**
+
+👤 **Ismael Vázquez**
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
