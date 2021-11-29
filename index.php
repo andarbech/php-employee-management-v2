@@ -1,26 +1,28 @@
 <?php
+// require_once './libs/app.php';
+// $app= new App;
 
-require_once("./config/constants.php");
-require_once(LIBRARY . "/sessionHelper.php");
+// require_once("./config/constants.php");
+// require_once(LIBRARY . "/sessionHelper.php");
 
-startSession();
-checkSession();
+// startSession();  
+// checkSession();
 
-if (getSessionValue("user")) {
-	$query = $_SERVER["QUERY_STRING"];
+// if (getSessionValue("user")) {
+// 	$query = $_SERVER["QUERY_STRING"];
 
-	switch ($query) {
-		case "employee":
-			header("Location: " . BASE_URL . "/src/employee.php");
-			exit();
-		case "dashboard":
-			header("Location: " . BASE_URL . "/src/dashboard.php");
-			exit();
-		default:
-			header("Location: " . BASE_URL . "/src/dashboard.php");
-			exit();
-	}
-}
+// 	switch ($query) {
+// 		case "employee":
+// 			header("Location: " . BASE_URL . "/src/employee.php");
+// 			exit();
+// 		case "dashboard":
+// 			header("Location: " . BASE_URL . "/src/dashboard.php");
+// 			exit();
+// 		default:
+// 			header("Location: " . BASE_URL . "/src/dashboard.php");
+// 			exit();
+// 	}
+// }
 ?>
 
 <!DOCTYPE html>
