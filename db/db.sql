@@ -117,6 +117,6 @@ VALUES (
     );
 
 INSERT INTO users (name, email, password)
-VALUES ("admin", "mark.parellada@gmail.com", "$2y$10$8Jq.8i9/FUIJOUCmA8AUx.Rxrhwcq3YbwfEBmP8Tg9YtsTTn.kHAK");
+VALUES ("admin", "mark.parellada@gmail.com", "contrasenya");
 
 

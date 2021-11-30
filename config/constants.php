@@ -9,3 +9,27 @@ define("RESOURCES", ROOT . "/resources");
 define("SRC", ROOT . "/src");
 define("LIBRARY", SRC . "/library");
 define("LIFETIME", 600);
+
+//LIBS
+define("LIBS", SRC . '/libs');
+
+//CONTROLLERS
+define("CONTROLLERS", SRC . '/controllers');
+
+//VIEWS
+define("VIEWS", SRC . '/views');
+
+//MODELS
+define("MODELS", SRC . '/models');
+
+
+//CSS
+define('CSS', BASE_URL . '/assets/css');
+
+//JS
+define('JS', BASE_URL . '/assets/js');
+
+// QUERIES
+define("QUERIES", ROOT . '/db');
+
+
