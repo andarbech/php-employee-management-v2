@@ -1,6 +1,10 @@
 <?php
-// require_once './libs/app.php';
-// $app= new App;
+require_once './libs/app.php';
+require_once './libs/controller.php';
+require_once './libs/model.php';
+require_once './libs/view.php';
+
+$app = new App;
 
 // require_once("./config/constants.php");
 // require_once(LIBRARY . "/sessionHelper.php");
@@ -25,7 +29,80 @@
 // }
 ?>
 
-<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,4 +131,4 @@
 	</main>
 </body>
 
-</html>
+</html> -->

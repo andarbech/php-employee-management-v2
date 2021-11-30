@@ -1,8 +1,12 @@
 <?php
-class Error
+require_once './libs/controller.php';
+class ErrorClass extends Controller
+
 {
     function __construct()
     {
-        echo "error al cargar el recurso";
+        parent::__construct();
+        $this->view->message="Error this page don't exist";
+        $this->view->render('error/index');
     }
 }

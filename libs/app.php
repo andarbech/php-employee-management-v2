@@ -1,5 +1,6 @@
  <?php
 
+    require_once 'controllers/error.php';
     class App
     {
         function __construct()
@@ -8,6 +9,7 @@
             $url = rtrim($url, '/');
             $url = explode('/', $url);
             $archivoController = 'controllers/' . $url[0] . '.php';
+            var_dump(file_exists($archivoController));
             if (file_exists($archivoController)) {
                 require_once $archivoController;
                 $controller = new $url[0];
@@ -15,8 +17,7 @@
                     $controller->{$url[1]}();
                 }
             } else {
-                //  $controller = new Error();
-                require_once 'controllers/error.php';
+                $controller = new ErrorClass();
             }
         }
     }
