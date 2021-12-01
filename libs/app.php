@@ -25,7 +25,7 @@
                 $controller = new $class();
                 $controller->loadModel($url[0]);
                 if (isset($url[1])) {
-                    $controller->{$url[1]}($url[2]);
+                    $controller->{$url[1]}();
                 }
             } else {
                 $controller = new ErrorClass();
