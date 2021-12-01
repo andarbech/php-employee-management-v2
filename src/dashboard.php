@@ -33,7 +33,7 @@ if (!getSessionValue("user")) {
 </head>
 
 <body class="min-vh-100 position-relative pb-5">
-	<?php include(ASSETS . "/html/header.html"); ?>
+	<?php include(ASSETS . "/html/navbar.html"); ?>
 	<main class="position-relative container-sm p-5 w-100">
 		<?php include(SRC . "/notifications.php"); ?>
 		<h1 class="display-6 m-0">Dashboard</h1>

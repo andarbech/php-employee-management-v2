@@ -1,5 +1,5 @@
 <?php
-require_once LIBRARY . '/Database.php';
+require_once LIBS . '/Database.php';
 
 class Model
 {
