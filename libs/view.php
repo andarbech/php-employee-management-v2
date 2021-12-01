@@ -3,11 +3,9 @@ class View
 {
     function __construct()
     {
-        echo "<pre>";
-        echo "view base";
     }
-    function render($nombre)
+    function render($name)
     {
-        require 'views/' . $nombre . '.php';
+        require 'views/' . $name . '.php';
     }
 }
