@@ -1,7 +1,7 @@
  <?php
 
-    require_once 'controllers/error.php';
-    class App
+    require_once './src/controllers/error.php';
+    class Router
     {
         function __construct()
         {
