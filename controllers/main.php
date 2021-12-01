@@ -8,7 +8,6 @@ class Main extends Controller
     function __construct()
     {
         parent::__construct();
-        
     }
     function render()
     {
@@ -17,5 +16,6 @@ class Main extends Controller
     function users()
     {
         $this->model->getUserData();
+        $this->model->get();
     }
 }

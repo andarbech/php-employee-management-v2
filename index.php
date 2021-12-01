@@ -5,5 +5,6 @@ require_once './libs/controller.php';
 require_once './libs/model.php';
 require_once './libs/view.php';
 require_once './config/constants.php';
+require_once './config/db.php';
 
 $app = new App;
