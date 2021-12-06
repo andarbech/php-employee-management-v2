@@ -16,6 +16,7 @@ class Main extends Controller
     function users()
     {
         $this->model->getUserData();
-        $this->model->get();
+        
+        $this->view->render('dashboard/index');
     }
 }

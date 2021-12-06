@@ -1,17 +1,4 @@
-<?php
 
-require_once("../config/constants.php");
-require_once(LIBRARY . "/sessionHelper.php");
-
-startSession();
-checkSession();
-
-if (!getSessionValue("user")) {
-	header("Location: " . BASE_URL);
-	exit();
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
