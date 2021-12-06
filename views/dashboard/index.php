@@ -21,8 +21,9 @@
     <?php include(ASSETS . "/html/header.html"); ?>
     <main class="position-relative container-sm p-5 w-100">
         <h1 class="display-6 m-0">Dashboard</h1>
-        <hr />
+        <hr />  
         <div id="jsGrid"></div>
+        <div><?= json_encode($this->employee) ?></div>
     </main>
     <?php include(ASSETS . "/html/footer.html"); ?>
 </body>

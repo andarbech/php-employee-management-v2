@@ -2,15 +2,16 @@
 
 const form = document.querySelector("#employee-form");
 console.log(form);
-form.addEventListener("submit", () => {
-    alert("Hello! I am an alert box!!");
-    //     fetch("http://localhost:9000/assembler/week21/php-employee-management-v2/employee/get")
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             console.log(data)
-    //         })
-    //         .catch(error => console.error(error))
-})
+
+// form.addEventListener("submit", () => {
+//     alert("Hello! I am an alert box!!");
+//     fetch("http://localhost:9000/assembler/week21/php-employee-management-v2/employee/get")
+//         .then(response => response.json())
+//         .then(data => {
+//             console.log(data)
+//         })
+//         .catch(error => console.error(error))
+// })
 
 // var controller = [{
 //             "id": 1,

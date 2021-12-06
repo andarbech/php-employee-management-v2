@@ -27,9 +27,6 @@ class EmployeeModel extends Model
                 $item->phoneNumber = $row['phoneNumber'];
                 array_push($items, $item);
             }
-            // echo "<pre>";
-            // var_dump($items);
-            // echo "<pre>";
             return $items;
         } catch (PDOException $e) {
             return [];
