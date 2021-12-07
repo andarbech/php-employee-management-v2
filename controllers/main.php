@@ -15,8 +15,13 @@ class Main extends Controller
     }
     function users()
     {
-        $this->model->getUserData();
-        
-        $this->view->render('dashboard/index');
+        $result = $this->model->getUserData($_POST["password"], $_POST["username"]);
+        var_dump($result);
+        // if (!$result) {
+        //     header('Location: ' . BASE_URL . '/');
+        //     exit();
+        // }
+        // header('Location: ' . BASE_URL . 'employee/get');
+        // exit();
     }
 }

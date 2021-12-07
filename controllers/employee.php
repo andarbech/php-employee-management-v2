@@ -6,15 +6,15 @@ class Employee extends Controller
     function __construct()
     {
         parent::__construct();
-        // $this->view->employee = [];
+        $this->view->employee = [];
     }
     function get()
     {
-        $employee = $this->model->getllAllEmployee();
-        $this->view->employee =$employee;
-        // $result=json_encode($this->employee);
+        $employees = $this->model->getllAllEmployee();
+        echo json_encode($employees);
     }
-    function result(){
-        // $this->view->render('dashboard/index');
+    function dashboard()
+    {
+        $this->view->render('dashboard/index');
     }
 }

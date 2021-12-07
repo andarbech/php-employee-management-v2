@@ -16,7 +16,7 @@
 		<h1 class="text-center display-4">Employee Manager</h1>
 		<div class="border py-3 px-5 rounded-2 bg-light">
 			<h2 class="text-center fs-4 fw-light p-0 mb-4">Login</h2>
-			<form method="POST" action="<?= BASE_URL . '/employee/get' ?>">
+			<form method="POST" action="<?= BASE_URL . '/main/users' ?>">
 				<p>'/main/users'</p>
 				<input class="form-control form-control-lg mb-3" type="text" name="username" id="username" placeholder="username" />
 				<input class="form-control form-control-lg mb-3" type="password" name="password" id="password" placeholder="password" />
