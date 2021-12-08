@@ -8,28 +8,18 @@ class MainModel extends Model
     {
         parent::__construct();
     }
-    // WHERE email = ?",
-    // $_POST["username"]
-    public function getUserData()
+    public function getUserData($email, $password)
     {
-        try {
 
-        $email = 'admin@assemblerschool.com';
         $query = $this->db->connect()->query("SELECT * FROM users WHERE email ='$email'");
-
         $results = $query->fetch();
-
-        if ($_POST["password"] === $results["password"]) {
+        if ($password === $results["password"]) {
             // $_SESSION['userId'] = $results["id"];
             // $_SESSION['time'] = time();
             // $_SESSION['lifeTime'] = 60 * 10;
-            echo "Password changed andrecito listo";
             return true;
         }
-        echo 'no error';
-        } catch (Exception $e) {
-            return false;
-        }
+        return false;
     }
 }
 // mark.parellada@gmail.com

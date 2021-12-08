@@ -12,7 +12,7 @@ class EmployeeModel extends Model
     {
         $items = [];
         try {
-            $query = $this->db->connect()->query("SELECT * FROM  employees WHERE name='Rack' ");
+            $query = $this->db->connect()->query("SELECT * FROM  employees");
             while ($row = $query->fetch()) {
                 $item = new Employee();
                 $item->name = $row['name'];
